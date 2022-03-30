@@ -2,7 +2,7 @@ public class ThisKeyword {
     int registerNo;
     String name;
     ThisKeyword()
-    {
+    {   //this(120,"sdf");
         registerNo=666;
         name="Vinothkumar Selvaarasan";
         this.printdata();
