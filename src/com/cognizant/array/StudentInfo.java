@@ -6,7 +6,8 @@ public class StudentInfo {
     int registerNo;
     String name;
     int total=0;
-    int marks[]=new int[6];
+    int marks[];//Declare Array
+    int arraySize;
     Scanner s1=new Scanner(System.in);
     void getData()
     {
@@ -14,6 +15,10 @@ public class StudentInfo {
         registerNo=s1.nextInt();
         System.out.println("Enter the Name ");
         name=s1.next();
+        System.out.println("Enter the Array Size U want to allocate");
+        arraySize=s1.nextInt();
+        marks=new int[arraySize];//Define an array size
+
         for(int i=0;i<marks.length;i++)
         {
             System.out.println("Enter the Marks for Subject  "+(i+1));
